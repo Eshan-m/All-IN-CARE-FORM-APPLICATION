@@ -102,6 +102,9 @@
     <EmbeddedResource Include="Channel.resx">
       <DependentUpon>Channel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Contact.resx">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Doctor Login.resx">
       <DependentUpon>Doctor Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DP LOGIN.resx">
       <DependentUpon>DP LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy.resx">
+      <DependentUpon>Pharmacy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PR LOGIN.resx">
       <DependentUpon>PR LOGIN.cs</DependentUpon>
