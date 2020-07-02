@@ -24,7 +24,8 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Contact c = new Contact();
+            c.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -36,6 +37,18 @@ namespace WindowsFormsApp1
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Pharmacy p = new Pharmacy();
+            p.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Channel ch = new Channel();
+            ch.Show();
         }
     }
 }

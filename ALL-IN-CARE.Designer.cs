@@ -36,8 +36,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -111,6 +111,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Get Medicine";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -122,17 +123,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Channel Now";
             this.button5.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Location = new System.Drawing.Point(242, 282);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 29);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "About Us:";
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label2
             // 
@@ -147,6 +138,17 @@
     "m health issues and hasn\'t the financial states to get the best healthcare.";
             this.label2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.Location = new System.Drawing.Point(242, 282);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 29);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "About Us:";
             // 
             // imageList1
             // 

@@ -52,11 +52,11 @@
     <Compile Include="ALL-IN-CARE.Designer.cs">
       <DependentUpon>ALL-IN-CARE.cs</DependentUpon>
     </Compile>
-    <Compile Include="Contact Us.cs">
+    <Compile Include="Contact.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Contact Us.Designer.cs">
-      <DependentUpon>Contact Us.cs</DependentUpon>
+    <Compile Include="Contact.Designer.cs">
+      <DependentUpon>Contact.cs</DependentUpon>
     </Compile>
     <Compile Include="Doctor Login.cs">
       <SubType>Form</SubType>
@@ -70,11 +70,11 @@
     <Compile Include="Channel.Designer.cs">
       <DependentUpon>Channel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pharmacy Order.cs">
+    <Compile Include="Pharmacy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pharmacy Order.Designer.cs">
-      <DependentUpon>Pharmacy Order.cs</DependentUpon>
+    <Compile Include="Pharmacy.Designer.cs">
+      <DependentUpon>Pharmacy.cs</DependentUpon>
     </Compile>
     <Compile Include="PR LOGIN.cs">
       <SubType>Form</SubType>
@@ -102,9 +102,6 @@
     <EmbeddedResource Include="Channel.resx">
       <DependentUpon>Channel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Contact Us.resx">
-      <DependentUpon>Contact Us.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Doctor Login.resx">
       <DependentUpon>Doctor Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,9 +110,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DP LOGIN.resx">
       <DependentUpon>DP LOGIN.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Pharmacy Order.resx">
-      <DependentUpon>Pharmacy Order.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PR LOGIN.resx">
       <DependentUpon>PR LOGIN.cs</DependentUpon>
