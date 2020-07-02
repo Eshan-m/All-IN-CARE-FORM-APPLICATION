@@ -52,10 +52,64 @@
     <Compile Include="ALL-IN-CARE.Designer.cs">
       <DependentUpon>ALL-IN-CARE.cs</DependentUpon>
     </Compile>
+    <Compile Include="Doctor Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor Login.Designer.cs">
+      <DependentUpon>Doctor Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Channel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Channel.Designer.cs">
+      <DependentUpon>Channel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacy Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacy Order.Designer.cs">
+      <DependentUpon>Pharmacy Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PR LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PR LOGIN.Designer.cs">
+      <DependentUpon>PR LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient Login.Designer.cs">
+      <DependentUpon>Patient Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DP LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DP LOGIN.Designer.cs">
+      <DependentUpon>DP LOGIN.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ALL-IN-CARE.resx">
       <DependentUpon>ALL-IN-CARE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Channel.resx">
+      <DependentUpon>Channel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor Login.resx">
+      <DependentUpon>Doctor Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient Login.resx">
+      <DependentUpon>Patient Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DP LOGIN.resx">
+      <DependentUpon>DP LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacy Order.resx">
+      <DependentUpon>Pharmacy Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PR LOGIN.resx">
+      <DependentUpon>PR LOGIN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

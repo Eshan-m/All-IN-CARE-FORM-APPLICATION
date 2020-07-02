@@ -20,12 +20,7 @@ namespace WindowsFormsApp1
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        }      
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -33,6 +28,12 @@ namespace WindowsFormsApp1
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            LOGIN log = new LOGIN();
+            log.Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
