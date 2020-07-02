@@ -52,6 +52,12 @@
     <Compile Include="ALL-IN-CARE.Designer.cs">
       <DependentUpon>ALL-IN-CARE.cs</DependentUpon>
     </Compile>
+    <Compile Include="Contact Us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact Us.Designer.cs">
+      <DependentUpon>Contact Us.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doctor Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Channel.resx">
       <DependentUpon>Channel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact Us.resx">
+      <DependentUpon>Contact Us.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doctor Login.resx">
       <DependentUpon>Doctor Login.cs</DependentUpon>
