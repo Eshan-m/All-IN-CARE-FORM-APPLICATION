@@ -50,5 +50,10 @@ namespace WindowsFormsApp1
             Channel ch = new Channel();
             ch.Show();
         }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
