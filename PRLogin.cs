@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class LOGIN : Form
+    public partial class PRLogin : Form
     {
-        public LOGIN()
+        public PRLogin()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }
