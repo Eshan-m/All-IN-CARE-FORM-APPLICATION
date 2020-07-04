@@ -21,5 +21,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void PRLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
