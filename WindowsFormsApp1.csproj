@@ -58,11 +58,11 @@
     <Compile Include="Contact.Designer.cs">
       <DependentUpon>Contact.cs</DependentUpon>
     </Compile>
-    <Compile Include="DoctorLogin.cs">
+    <Compile Include="Doctor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DoctorLogin.Designer.cs">
-      <DependentUpon>DoctorLogin.cs</DependentUpon>
+    <Compile Include="Doctor.Designer.cs">
+      <DependentUpon>Doctor.cs</DependentUpon>
     </Compile>
     <Compile Include="Channel.cs">
       <SubType>Form</SubType>
@@ -70,17 +70,17 @@
     <Compile Include="Channel.Designer.cs">
       <DependentUpon>Channel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient.Designer.cs">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pharmacy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pharmacy.Designer.cs">
       <DependentUpon>Pharmacy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PatientLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PatientLogin.Designer.cs">
-      <DependentUpon>PatientLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="DPLOGIN.cs">
       <SubType>Form</SubType>
@@ -105,11 +105,11 @@
     <EmbeddedResource Include="Contact.resx">
       <DependentUpon>Contact.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DoctorLogin.resx">
-      <DependentUpon>DoctorLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Doctor.resx">
+      <DependentUpon>Doctor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PatientLogin.resx">
-      <DependentUpon>PatientLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Patient.resx">
+      <DependentUpon>Patient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DPLOGIN.resx">
       <DependentUpon>DPLOGIN.cs</DependentUpon>

@@ -38,5 +38,17 @@ namespace WindowsFormsApp1
             olog.Show();
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Patient p = new Patient();
+            p.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Doctor d = new Doctor();
+            d.Show();
+        }
     }
 }
