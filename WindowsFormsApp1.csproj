@@ -70,6 +70,66 @@
     <Compile Include="Channel.Designer.cs">
       <DependentUpon>Channel.cs</DependentUpon>
     </Compile>
+    <Compile Include="DProfileSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DProfileSettings.Designer.cs">
+      <DependentUpon>DProfileSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorDetails.Designer.cs">
+      <DependentUpon>DoctorDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appoinment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appoinment.Designer.cs">
+      <DependentUpon>Appoinment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DChannels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DChannels.Designer.cs">
+      <DependentUpon>DChannels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientRecords.Designer.cs">
+      <DependentUpon>PatientRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentDetails.Designer.cs">
+      <DependentUpon>PaymentDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POrder.Designer.cs">
+      <DependentUpon>POrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PHealthinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PHealthinfo.Designer.cs">
+      <DependentUpon>PHealthinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PProfileSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PProfileSettings.Designer.cs">
+      <DependentUpon>PProfileSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup.Designer.cs">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Patient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,14 +159,26 @@
     <EmbeddedResource Include="ALL-IN-CARE.resx">
       <DependentUpon>ALL-IN-CARE.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Appoinment.resx">
+      <DependentUpon>Appoinment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Channel.resx">
       <DependentUpon>Channel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Contact.resx">
       <DependentUpon>Contact.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DChannels.resx">
+      <DependentUpon>DChannels.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Doctor.resx">
       <DependentUpon>Doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorDetails.resx">
+      <DependentUpon>DoctorDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DProfileSettings.resx">
+      <DependentUpon>DProfileSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patient.resx">
       <DependentUpon>Patient.cs</DependentUpon>
@@ -114,8 +186,23 @@
     <EmbeddedResource Include="DPLOGIN.resx">
       <DependentUpon>DPLOGIN.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PatientRecords.resx">
+      <DependentUpon>PatientRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentDetails.resx">
+      <DependentUpon>PaymentDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pharmacy.resx">
       <DependentUpon>Pharmacy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PHealthinfo.resx">
+      <DependentUpon>PHealthinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POrder.resx">
+      <DependentUpon>POrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PProfileSettings.resx">
+      <DependentUpon>PProfileSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PRLogin.resx">
       <DependentUpon>PRLogin.cs</DependentUpon>
@@ -129,6 +216,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

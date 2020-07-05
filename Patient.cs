@@ -16,5 +16,48 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PProfileSettings log = new PProfileSettings();
+            log.Show();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PHealthinfo log = new PHealthinfo();
+            log.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Channel log = new Channel();
+            log.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            POrder log = new POrder();
+            log.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            DoctorDetails log = new DoctorDetails();
+            log.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Appoinment log = new Appoinment();
+            log.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            PaymentDetails log = new PaymentDetails();
+            log.Show();
+        }
     }
 }
