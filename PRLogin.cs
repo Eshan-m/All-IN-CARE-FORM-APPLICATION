@@ -19,7 +19,9 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Signup log = new Signup();
+            log.Show();
+          
         }
 
         private void PRLogin_Load(object sender, EventArgs e)

@@ -50,5 +50,11 @@ namespace WindowsFormsApp1
             Doctor d = new Doctor();
             d.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Signup log = new Signup();
+            log.Show();
+        }
     }
 }

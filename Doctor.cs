@@ -16,5 +16,24 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DProfileSettings log = new DProfileSettings();
+            log.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DChannels log = new DChannels();
+            log.Show();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            PatientRecords logs = new PatientRecords();
+            logs.Show();
+        }
     }
 }
