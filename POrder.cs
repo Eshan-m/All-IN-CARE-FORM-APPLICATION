@@ -24,6 +24,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Pharmacy log = new Pharmacy();
             log.Show();
         }

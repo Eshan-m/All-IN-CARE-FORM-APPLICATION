@@ -24,7 +24,23 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            MessageBox.Show("Your Problem Has been Submitted");
+            Contact log = new Contact();
+            log.Show();
+            return;
+          
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 log = new Form1();
+            log.Show();
+
+            
+            
         }
     }
 }

@@ -51,5 +51,17 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();            
+            
+
+        }
     }
 }

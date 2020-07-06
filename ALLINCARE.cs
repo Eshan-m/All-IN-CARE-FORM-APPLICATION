@@ -24,12 +24,14 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Contact c = new Contact();
             c.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             LOGIN log = new LOGIN();
             log.Show();
         }
@@ -41,12 +43,14 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Pharmacy p = new Pharmacy();
             p.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Channel ch = new Channel();
             ch.Show();
         }

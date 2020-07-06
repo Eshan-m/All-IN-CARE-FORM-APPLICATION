@@ -19,6 +19,7 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Signup log = new Signup();
             log.Show();
           
@@ -27,6 +28,16 @@ namespace WindowsFormsApp1
         private void PRLogin_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

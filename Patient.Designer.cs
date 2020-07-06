@@ -216,6 +216,7 @@
             this.button8.TabIndex = 22;
             this.button8.Text = "Edit";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // textBox6
             // 
@@ -304,6 +305,7 @@
             this.button7.TabIndex = 31;
             this.button7.Text = "Log Out";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Patient
             // 
