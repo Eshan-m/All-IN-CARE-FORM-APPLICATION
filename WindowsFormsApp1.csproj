@@ -106,6 +106,12 @@
     <Compile Include="PaymentDetails.Designer.cs">
       <DependentUpon>PaymentDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="PharmacyLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PharmacyLogin.Designer.cs">
+      <DependentUpon>PharmacyLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="POrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,12 @@
     </Compile>
     <Compile Include="PProfileSettings.Designer.cs">
       <DependentUpon>PProfileSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RiderLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RiderLogin.Designer.cs">
+      <DependentUpon>RiderLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Signup.cs">
       <SubType>Form</SubType>
@@ -195,6 +207,9 @@
     <EmbeddedResource Include="Pharmacy.resx">
       <DependentUpon>Pharmacy.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PharmacyLogin.resx">
+      <DependentUpon>PharmacyLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PHealthinfo.resx">
       <DependentUpon>PHealthinfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,6 +231,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RiderLogin.resx">
+      <DependentUpon>RiderLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
     </EmbeddedResource>
