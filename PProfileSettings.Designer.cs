@@ -293,12 +293,16 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(609, 391);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(681, 404);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(179, 45);
+            this.button1.Size = new System.Drawing.Size(107, 32);
             this.button1.TabIndex = 35;
             this.button1.Text = "Confirm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // PProfileSettings

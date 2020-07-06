@@ -28,5 +28,13 @@ namespace WindowsFormsApp1
             Pharmacy log = new Pharmacy();
             log.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Patient log = new Patient();
+            log.Show();
+
+        }
     }
 }

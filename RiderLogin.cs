@@ -16,5 +16,27 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void splitter1_SplitterMoved(object sender, SplitterEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PRLogin log = new PRLogin();
+            log.Show();
+        }
     }
 }

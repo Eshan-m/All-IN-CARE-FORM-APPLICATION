@@ -21,5 +21,12 @@ namespace WindowsFormsApp1
         {
             this.Hide();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Patient log = new Patient();
+            log.Show();
+        }
     }
 }

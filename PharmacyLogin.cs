@@ -16,5 +16,12 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PRLogin log = new PRLogin();
+            log.Show();
+        }
     }
 }
