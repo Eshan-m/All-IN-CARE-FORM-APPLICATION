@@ -34,6 +34,7 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
+            this.Hide();
             PRLogin olog = new PRLogin();
             olog.Show();
 
@@ -41,18 +42,21 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Patient p = new Patient();
             p.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Doctor d = new Doctor();
             d.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Signup log = new Signup();
             log.Show();
         }

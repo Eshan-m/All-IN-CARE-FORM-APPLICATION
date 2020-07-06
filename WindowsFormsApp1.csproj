@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ALL-IN-CARE.cs">
+    <Compile Include="ALLINCARE.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ALL-IN-CARE.Designer.cs">
-      <DependentUpon>ALL-IN-CARE.cs</DependentUpon>
+    <Compile Include="ALLINCARE.Designer.cs">
+      <DependentUpon>ALLINCARE.cs</DependentUpon>
     </Compile>
     <Compile Include="Contact.cs">
       <SubType>Form</SubType>
@@ -156,8 +156,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ALL-IN-CARE.resx">
-      <DependentUpon>ALL-IN-CARE.cs</DependentUpon>
+    <EmbeddedResource Include="ALLINCARE.resx">
+      <DependentUpon>ALLINCARE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Appoinment.resx">
       <DependentUpon>Appoinment.cs</DependentUpon>
