@@ -60,5 +60,17 @@ namespace WindowsFormsApp1
             Signup log = new Signup();
             log.Show();
         }
+
+        private void LOGIN_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 log = new Form1();
+            log.Show();
+        }
     }
 }

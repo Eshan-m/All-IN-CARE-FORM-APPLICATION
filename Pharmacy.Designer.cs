@@ -44,6 +44,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // splitter1
@@ -123,12 +124,17 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(609, 366);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(627, 413);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 45);
+            this.button1.Size = new System.Drawing.Size(161, 25);
             this.button1.TabIndex = 7;
             this.button1.Text = "Checkout";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox1
@@ -141,7 +147,7 @@
             "City3",
             "City4"});
             this.comboBox1.Location = new System.Drawing.Point(38, 84);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(137, 21);
             this.comboBox1.TabIndex = 10;
@@ -156,7 +162,7 @@
             "Suburb3",
             "Suburb4"});
             this.comboBox2.Location = new System.Drawing.Point(38, 171);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(137, 21);
             this.comboBox2.TabIndex = 11;
@@ -198,7 +204,7 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(38, 261);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(137, 160);
             this.listBox1.TabIndex = 15;
@@ -214,6 +220,19 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Please Select Your Delivery Area:";
             // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(7, 408);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(26, 34);
+            this.button5.TabIndex = 17;
+            this.button5.Text = "<";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Pharmacy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -221,6 +240,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label7);
@@ -263,5 +283,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button5;
     }
 }

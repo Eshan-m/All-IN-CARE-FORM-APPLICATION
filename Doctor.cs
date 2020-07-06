@@ -43,5 +43,12 @@ namespace WindowsFormsApp1
         {
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LOGIN log = new LOGIN();
+            log.Show();
+        }
     }
 }

@@ -76,5 +76,22 @@ namespace WindowsFormsApp1
         {
             this.Hide();
         }
+
+        private void splitter1_SplitterMoved(object sender, SplitterEventArgs e)
+        {
+
+        }
+
+        private void Patient_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LOGIN log = new LOGIN();
+            log.Show();
+        }
     }
 }
