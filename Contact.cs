@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace WindowsFormsApp1
 {
@@ -24,11 +26,28 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            MessageBox.Show("Your Problem Has been Submitted");
-            Contact log = new Contact();
-            log.Show();
-            return;
+            string name = nameTxt.Text;
+            string prob = probTxt.Text;
+            string tele = teleTxt.Text;
+            string email = emailTxt.Text;
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Documents\Contact.mdf;Integrated Security=True;Connect Timeout=30");
+            string query = "insert into Contact(Name,Problem,Tele,Email) values('" + name + "','" + prob + "','" + tele + "','" + email + "')";
+            SqlCommand cmd = new SqlCommand(query, con);
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Your Problem Has been Submitted");
+            }
+            catch(SqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                con.Close();
+            }
+          
           
 
         }
