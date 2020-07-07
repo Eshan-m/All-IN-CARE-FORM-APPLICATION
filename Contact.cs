@@ -37,11 +37,11 @@ namespace WindowsFormsApp1
             {
                 con.Open();
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Your Problem Has been Submitted");
+                MessageBox.Show("Your Problem Has been Submitted successfully");
             }
             catch(SqlException ex)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show("Error submitting your problem");
             }
             finally
             {
