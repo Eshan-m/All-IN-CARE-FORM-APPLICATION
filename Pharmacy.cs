@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Desktop\All-IN-CARE-FORM-APPLICATION\Pharmacy.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\EDUCATION\1 Year SEM 3\Object Oriented Programming with C#\Assigments\SEM END Project\All-IN-CARE-FORM-APPLICATION\Pharmacy.mdf;Integrated Security=True;Connect Timeout=30");
             string query = "insert into Pharmacy(City,Pharmacy,Date,Payment) values('" + cityCmb.Text + "','" + pharmacyLst.Text + "','" + dateCal.CustomFormat + "','" + Payment + "')";
             SqlCommand cmd = new SqlCommand(query, con);
             this.Hide();
