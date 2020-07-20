@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
             string prob = probTxt.Text;
             string tele = teleTxt.Text;
             string email = emailTxt.Text;
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Desktop\All-IN-CARE-FORM-APPLICATION\Contact.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Desktop\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
             string query = "insert into Contact(Name,Problem,Tele,Email) values('" + name + "','" + prob + "','" + tele + "','" + email + "')";
             SqlCommand cmd = new SqlCommand(query, con);
             try
@@ -41,6 +41,7 @@ namespace WindowsFormsApp1
             }
             catch(SqlException ex)
             {
+                MessageBox.Show(ex.ToString());
                 MessageBox.Show("Error submitting your problem");
             }
             finally
