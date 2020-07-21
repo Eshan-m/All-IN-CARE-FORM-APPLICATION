@@ -35,27 +35,31 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.FName = new System.Windows.Forms.TextBox();
+            this.LName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.BDdate = new System.Windows.Forms.DateTimePicker();
+            this.AdLine1 = new System.Windows.Forms.TextBox();
+            this.ADLine2 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.Province = new System.Windows.Forms.ComboBox();
+            this.ZipCode = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.Mail = new System.Windows.Forms.TextBox();
+            this.ECNo1 = new System.Windows.Forms.TextBox();
+            this.ECNo2 = new System.Windows.Forms.TextBox();
+            this.MbNo1 = new System.Windows.Forms.TextBox();
+            this.MbNo2 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.Username = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -118,20 +122,19 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Emergency Contact Number ";
             // 
-            // textBox1
+            // FName
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(161, 20);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.FName.Location = new System.Drawing.Point(16, 34);
+            this.FName.Name = "FName";
+            this.FName.Size = new System.Drawing.Size(161, 20);
+            this.FName.TabIndex = 6;
             // 
-            // textBox2
+            // LName
             // 
-            this.textBox2.Location = new System.Drawing.Point(211, 34);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(161, 20);
-            this.textBox2.TabIndex = 7;
+            this.LName.Location = new System.Drawing.Point(197, 34);
+            this.LName.Name = "LName";
+            this.LName.Size = new System.Drawing.Size(142, 20);
+            this.LName.TabIndex = 7;
             // 
             // label7
             // 
@@ -149,33 +152,34 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label8.Location = new System.Drawing.Point(208, 57);
+            this.label8.Location = new System.Drawing.Point(195, 57);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(66, 12);
             this.label8.TabIndex = 9;
             this.label8.Text = "Last Name";
             // 
-            // dateTimePicker1
+            // BDdate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(16, 100);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(323, 20);
-            this.dateTimePicker1.TabIndex = 10;
-            this.dateTimePicker1.Value = new System.DateTime(2020, 7, 8, 0, 0, 0, 0);
+            this.BDdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.BDdate.Location = new System.Drawing.Point(12, 100);
+            this.BDdate.Name = "BDdate";
+            this.BDdate.Size = new System.Drawing.Size(185, 20);
+            this.BDdate.TabIndex = 10;
+            this.BDdate.Value = new System.DateTime(2020, 7, 8, 0, 0, 0, 0);
             // 
-            // textBox3
+            // AdLine1
             // 
-            this.textBox3.Location = new System.Drawing.Point(16, 155);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(323, 20);
-            this.textBox3.TabIndex = 11;
+            this.AdLine1.Location = new System.Drawing.Point(16, 155);
+            this.AdLine1.Name = "AdLine1";
+            this.AdLine1.Size = new System.Drawing.Size(323, 20);
+            this.AdLine1.TabIndex = 11;
             // 
-            // textBox4
+            // ADLine2
             // 
-            this.textBox4.Location = new System.Drawing.Point(16, 196);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(323, 20);
-            this.textBox4.TabIndex = 12;
+            this.ADLine2.Location = new System.Drawing.Point(16, 196);
+            this.ADLine2.Name = "ADLine2";
+            this.ADLine2.Size = new System.Drawing.Size(323, 20);
+            this.ADLine2.TabIndex = 12;
             // 
             // label9
             // 
@@ -199,20 +203,30 @@
             this.label10.TabIndex = 14;
             this.label10.Text = "Line 2";
             // 
-            // comboBox2
+            // Province
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(488, 207);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(196, 21);
-            this.comboBox2.TabIndex = 24;
+            this.Province.FormattingEnabled = true;
+            this.Province.Items.AddRange(new object[] {
+            "Northern",
+            "North Central",
+            "North Western",
+            "Eastern",
+            "Central",
+            "Western",
+            "Sabaragamuwa",
+            "Uva",
+            "Southern"});
+            this.Province.Location = new System.Drawing.Point(488, 207);
+            this.Province.Name = "Province";
+            this.Province.Size = new System.Drawing.Size(196, 21);
+            this.Province.TabIndex = 24;
             // 
-            // textBox8
+            // ZipCode
             // 
-            this.textBox8.Location = new System.Drawing.Point(488, 157);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(87, 20);
-            this.textBox8.TabIndex = 22;
+            this.ZipCode.Location = new System.Drawing.Point(488, 157);
+            this.ZipCode.Name = "ZipCode";
+            this.ZipCode.Size = new System.Drawing.Size(87, 20);
+            this.ZipCode.TabIndex = 22;
             // 
             // label11
             // 
@@ -234,40 +248,40 @@
             this.label12.TabIndex = 26;
             this.label12.Text = "Province";
             // 
-            // textBox5
+            // Mail
             // 
-            this.textBox5.Location = new System.Drawing.Point(15, 267);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(323, 20);
-            this.textBox5.TabIndex = 27;
+            this.Mail.Location = new System.Drawing.Point(15, 267);
+            this.Mail.Name = "Mail";
+            this.Mail.Size = new System.Drawing.Size(323, 20);
+            this.Mail.TabIndex = 27;
             // 
-            // textBox7
+            // ECNo1
             // 
-            this.textBox7.Location = new System.Drawing.Point(12, 404);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(142, 20);
-            this.textBox7.TabIndex = 29;
+            this.ECNo1.Location = new System.Drawing.Point(12, 404);
+            this.ECNo1.Name = "ECNo1";
+            this.ECNo1.Size = new System.Drawing.Size(142, 20);
+            this.ECNo1.TabIndex = 29;
             // 
-            // textBox9
+            // ECNo2
             // 
-            this.textBox9.Location = new System.Drawing.Point(197, 404);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(142, 20);
-            this.textBox9.TabIndex = 30;
+            this.ECNo2.Location = new System.Drawing.Point(197, 404);
+            this.ECNo2.Name = "ECNo2";
+            this.ECNo2.Size = new System.Drawing.Size(142, 20);
+            this.ECNo2.TabIndex = 30;
             // 
-            // textBox6
+            // MbNo1
             // 
-            this.textBox6.Location = new System.Drawing.Point(15, 319);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(142, 20);
-            this.textBox6.TabIndex = 31;
+            this.MbNo1.Location = new System.Drawing.Point(15, 319);
+            this.MbNo1.Name = "MbNo1";
+            this.MbNo1.Size = new System.Drawing.Size(142, 20);
+            this.MbNo1.TabIndex = 31;
             // 
-            // textBox10
+            // MbNo2
             // 
-            this.textBox10.Location = new System.Drawing.Point(196, 319);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(142, 20);
-            this.textBox10.TabIndex = 32;
+            this.MbNo2.Location = new System.Drawing.Point(196, 319);
+            this.MbNo2.Name = "MbNo2";
+            this.MbNo2.Size = new System.Drawing.Size(142, 20);
+            this.MbNo2.TabIndex = 32;
             // 
             // label13
             // 
@@ -305,6 +319,45 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(392, 9);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(86, 17);
+            this.label15.TabIndex = 36;
+            this.label15.Text = "UserName";
+            // 
+            // Username
+            // 
+            this.Username.Location = new System.Drawing.Point(395, 29);
+            this.Username.Name = "Username";
+            this.Username.Size = new System.Drawing.Size(261, 20);
+            this.Username.TabIndex = 37;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label16.Location = new System.Drawing.Point(12, 427);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(107, 12);
+            this.label16.TabIndex = 38;
+            this.label16.Text = "Mobile Number 1";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label17.Location = new System.Drawing.Point(195, 427);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(107, 12);
+            this.label17.TabIndex = 39;
+            this.label17.Text = "Mobile Number 2";
+            // 
             // PProfileSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -312,27 +365,31 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.Username);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.MbNo2);
+            this.Controls.Add(this.MbNo1);
+            this.Controls.Add(this.ECNo2);
+            this.Controls.Add(this.ECNo1);
+            this.Controls.Add(this.Mail);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.Province);
+            this.Controls.Add(this.ZipCode);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.ADLine2);
+            this.Controls.Add(this.AdLine1);
+            this.Controls.Add(this.BDdate);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.LName);
+            this.Controls.Add(this.FName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -343,7 +400,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "PProfileSettings";
-            this.Text = "Profile Settings";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -357,26 +414,30 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox FName;
+        private System.Windows.Forms.TextBox LName;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.DateTimePicker BDdate;
+        private System.Windows.Forms.TextBox AdLine1;
+        private System.Windows.Forms.TextBox ADLine2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.ComboBox Province;
+        private System.Windows.Forms.TextBox ZipCode;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox Mail;
+        private System.Windows.Forms.TextBox ECNo1;
+        private System.Windows.Forms.TextBox ECNo2;
+        private System.Windows.Forms.TextBox MbNo1;
+        private System.Windows.Forms.TextBox MbNo2;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox Username;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
     }
 }
