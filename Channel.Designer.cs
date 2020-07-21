@@ -34,8 +34,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dtpAppointment = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.cmbProbType = new System.Windows.Forms.ComboBox();
+            this.btnChannel = new System.Windows.Forms.Button();
+            this.cmbSpecialize = new System.Windows.Forms.ComboBox();
             this.cmbDoctor = new System.Windows.Forms.ComboBox();
             this.cmbHospital = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,9 +52,9 @@
             this.label1.Location = new System.Drawing.Point(16, 100);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 31);
+            this.label1.Size = new System.Drawing.Size(146, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Problem:";
+            this.label1.Text = "Specialize:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -99,41 +99,41 @@
             // dtpAppointment
             // 
             this.dtpAppointment.Location = new System.Drawing.Point(311, 463);
-            this.dtpAppointment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpAppointment.Margin = new System.Windows.Forms.Padding(4);
             this.dtpAppointment.Name = "dtpAppointment";
             this.dtpAppointment.Size = new System.Drawing.Size(277, 22);
             this.dtpAppointment.TabIndex = 8;
             // 
-            // button1
+            // btnChannel
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(709, 511);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(272, 64);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Channel Now";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnChannel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnChannel.FlatAppearance.BorderSize = 0;
+            this.btnChannel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.btnChannel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChannel.Location = new System.Drawing.Point(709, 511);
+            this.btnChannel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnChannel.Name = "btnChannel";
+            this.btnChannel.Size = new System.Drawing.Size(272, 64);
+            this.btnChannel.TabIndex = 9;
+            this.btnChannel.Text = "Channel Now";
+            this.btnChannel.UseVisualStyleBackColor = false;
+            this.btnChannel.Click += new System.EventHandler(this.button1_Click);
             // 
-            // cmbProbType
+            // cmbSpecialize
             // 
-            this.cmbProbType.FormattingEnabled = true;
-            this.cmbProbType.Items.AddRange(new object[] {
+            this.cmbSpecialize.FormattingEnabled = true;
+            this.cmbSpecialize.Items.AddRange(new object[] {
             "~Problems~",
             "Cardiologists",
             "Neurologists",
             "Otolaryngologists",
             "Ophthalmologists"});
-            this.cmbProbType.Location = new System.Drawing.Point(311, 107);
-            this.cmbProbType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbProbType.Name = "cmbProbType";
-            this.cmbProbType.Size = new System.Drawing.Size(277, 24);
-            this.cmbProbType.TabIndex = 10;
-            this.cmbProbType.Tag = "";
+            this.cmbSpecialize.Location = new System.Drawing.Point(311, 107);
+            this.cmbSpecialize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbSpecialize.Name = "cmbSpecialize";
+            this.cmbSpecialize.Size = new System.Drawing.Size(277, 24);
+            this.cmbSpecialize.TabIndex = 10;
+            this.cmbSpecialize.Tag = "";
             // 
             // cmbDoctor
             // 
@@ -205,7 +205,7 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(24, 538);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(131, 37);
             this.button2.TabIndex = 16;
@@ -226,8 +226,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbHospital);
             this.Controls.Add(this.cmbDoctor);
-            this.Controls.Add(this.cmbProbType);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cmbSpecialize);
+            this.Controls.Add(this.btnChannel);
             this.Controls.Add(this.dtpAppointment);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -237,7 +237,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Channel";
             this.Text = "Channel Now";
@@ -254,8 +254,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dtpAppointment;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox cmbProbType;
+        private System.Windows.Forms.Button btnChannel;
+        private System.Windows.Forms.ComboBox cmbSpecialize;
         private System.Windows.Forms.ComboBox cmbDoctor;
         private System.Windows.Forms.ComboBox cmbHospital;
         private System.Windows.Forms.Label label3;
