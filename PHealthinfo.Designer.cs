@@ -35,7 +35,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Age = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,8 +43,8 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Hei = new System.Windows.Forms.TextBox();
+            this.Wei = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -76,6 +76,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(211, 34);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(161, 20);
             this.textBox2.TabIndex = 13;
             // 
@@ -83,6 +84,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(16, 34);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(161, 20);
             this.textBox1.TabIndex = 12;
             // 
@@ -106,12 +108,12 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Full Name";
             // 
-            // textBox3
+            // Age
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 100);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(69, 20);
-            this.textBox3.TabIndex = 16;
+            this.Age.Location = new System.Drawing.Point(12, 100);
+            this.Age.Name = "Age";
+            this.Age.Size = new System.Drawing.Size(69, 20);
+            this.Age.TabIndex = 16;
             // 
             // label1
             // 
@@ -170,19 +172,19 @@
             this.label5.TabIndex = 20;
             this.label5.Text = "Weight";
             // 
-            // textBox4
+            // Hei
             // 
-            this.textBox4.Location = new System.Drawing.Point(77, 321);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(106, 20);
-            this.textBox4.TabIndex = 21;
+            this.Hei.Location = new System.Drawing.Point(77, 321);
+            this.Hei.Name = "Hei";
+            this.Hei.Size = new System.Drawing.Size(106, 20);
+            this.Hei.TabIndex = 21;
             // 
-            // textBox5
+            // Wei
             // 
-            this.textBox5.Location = new System.Drawing.Point(262, 318);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(110, 20);
-            this.textBox5.TabIndex = 22;
+            this.Wei.Location = new System.Drawing.Point(262, 318);
+            this.Wei.Name = "Wei";
+            this.Wei.Size = new System.Drawing.Size(110, 20);
+            this.Wei.TabIndex = 22;
             // 
             // button1
             // 
@@ -221,13 +223,13 @@
             this.ClientSize = new System.Drawing.Size(388, 450);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.Wei);
+            this.Controls.Add(this.Hei);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.Age);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox2);
@@ -253,7 +255,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Age;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -261,8 +263,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox Hei;
+        private System.Windows.Forms.TextBox Wei;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
     }
