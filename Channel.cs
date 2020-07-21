@@ -62,7 +62,7 @@ namespace WindowsFormsApp1
             string hos = cmbHospital.SelectedItem.ToString();
             string appointdate = dtpAppointment.Value.ToString();
 
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\isuru\OneDrive\Desktop\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\EDUCATION\1 Year SEM 3\Object Oriented Programming with C#\Assigments\SEM END Project\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
             string query = "insert into ChannelOne(Specialize,ProblemDescription,Doctor,Hospital,DateandTime) values('" + special + "', '" + descript + "', '" + doc + "', '" + hos + "', '" + appointdate + "')";
             SqlCommand cmd = new SqlCommand(query, con);
 

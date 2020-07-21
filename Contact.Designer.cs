@@ -130,8 +130,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Contact";
-            this.Text = "Contact";
-            this.Load += new System.EventHandler(this.Contact_Load);
+            this.Text = "Contact";           
             this.ResumeLayout(false);
             this.PerformLayout();
 
