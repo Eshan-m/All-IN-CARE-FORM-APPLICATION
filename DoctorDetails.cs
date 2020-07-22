@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -36,6 +37,18 @@ namespace WindowsFormsApp1
             Patient log = new Patient();
             log.Show();
                
+        }
+
+        private void btnDocInfo_Click(object sender, EventArgs e)
+        {
+            String conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\isuru\OneDrive\Desktop\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30";
+            String query = "SELECT * FROM DoctorDetails";
+
+            SqlDataAdapter adapter = new SqlDataAdapter(query, conString);
+            DataSet set = new DataSet();
+
+            adapter.Fill(set, "DoctorDetails");
+            dataGridView1.DataSource = set.Tables["DoctorDetails"];
         }
     }
 }
