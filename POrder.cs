@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
@@ -24,9 +25,30 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Pharmacy log = new Pharmacy();
-            log.Show();
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Desktop\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
+            string query = "insert into Order(FullName,Address,Prescription) values('" + fnameTxt.Text + "','" + adTxt.Text + "','" + prescmb.Text + "')";
+            SqlCommand cmd = new SqlCommand(query, con);
+            try
+            {
+                
+                con.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Successfully Recorded");
+                this.Hide();
+                Pharmacy log = new Pharmacy();
+                log.Show();
+
+            }
+            catch(SqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+                MessageBox.Show("Failed to record");
+            }
+            finally
+            {
+                con.Close();
+            }
+            
         }
 
         private void button5_Click(object sender, EventArgs e)
