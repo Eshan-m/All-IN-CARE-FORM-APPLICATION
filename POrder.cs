@@ -26,11 +26,10 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Desktop\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = "insert into Order(FullName,Address,Prescription) values('" + fnameTxt.Text + "','" + adTxt.Text + "','" + prescmb.Text + "')";
+            string query = "insert into [Order](FullName,Address,Prescription) values('" + fnameTxt.Text + "','" + adTxt.Text + "','" + prescmb.Text + "')";
             SqlCommand cmd = new SqlCommand(query, con);
             try
-            {
-                
+            { 
                 con.Open();
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Successfully Recorded");
