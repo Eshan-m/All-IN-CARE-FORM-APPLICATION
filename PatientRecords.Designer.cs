@@ -44,9 +44,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(16, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(311, 23);
+            this.label1.Size = new System.Drawing.Size(406, 31);
             this.label1.TabIndex = 36;
             this.label1.Text = "Check Your Patient Records";
             // 
@@ -59,35 +60,47 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 57);
+            this.dataGridView1.Location = new System.Drawing.Point(41, 70);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(544, 150);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(678, 185);
             this.dataGridView1.TabIndex = 37;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Patient id";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Hospital";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Date";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Problem";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Prescription Issued";
+            this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
             // 
             // button1
             // 
@@ -95,9 +108,10 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(208, 292);
+            this.button1.Location = new System.Drawing.Point(277, 359);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 32);
+            this.button1.Size = new System.Drawing.Size(179, 39);
             this.button1.TabIndex = 38;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = false;
@@ -105,13 +119,17 @@
             // 
             // PatientRecords
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 336);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(749, 458);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "PatientRecords";
             this.Text = "Patient Records";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

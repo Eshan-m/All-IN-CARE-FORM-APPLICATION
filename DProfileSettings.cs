@@ -29,7 +29,7 @@ namespace WindowsFormsApp1
             String query = "insert into DoctorProfile(Username,FirstName,LastName,BirthDate,AddressLine1,AddressLine2,Zipcode,Province,Email,MobileNo1,MobileNo2,EmergencyNo1,EmergencyNo2) values ('" + Username.Text + "','" + Fname.Text + "','" + Lname.Text + "','" + BDdate.Value.ToString() + "','" + ADLine1.Text + "','" + ADLine2.Text + "','" + ZipCode.Text + "','" + Province.Text + "','" + Mail.Text + "','" + MN1.Text + "','" + MN2.Text + "','" + EC1.Text + "','" + EC2.Text + "')";
             SqlCommand cmd = new SqlCommand(query, con);
             this.Hide();
-            Patient log = new Patient();
+            Doctor log = new Doctor();
             log.Show();
             try
             {
