@@ -34,7 +34,7 @@ namespace WindowsFormsApp1
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Successfully Recorded");
                 this.Hide();
-                Pharmacy log = new Pharmacy();
+                PharmacyCheckout log = new PharmacyCheckout();
                 log.Show();
 
             }

@@ -44,7 +44,7 @@ namespace WindowsFormsApp1
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Pharmacy p = new Pharmacy();
+            PharmacyCheckout p = new PharmacyCheckout();
             p.Show();
         }
 
