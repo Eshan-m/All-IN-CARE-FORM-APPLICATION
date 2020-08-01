@@ -33,14 +33,14 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            PharmacyLogin pl = new PharmacyLogin();
+            Pharmacy pl = new Pharmacy();
             pl.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            RiderLogin rl = new RiderLogin();
+            Rider rl = new Rider();
             rl.Show();
         }
 

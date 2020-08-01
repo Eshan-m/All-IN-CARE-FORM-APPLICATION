@@ -82,11 +82,11 @@
     <Compile Include="DoctorDetails.Designer.cs">
       <DependentUpon>DoctorDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="Appoinment.cs">
+    <Compile Include="Appointment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Appoinment.Designer.cs">
-      <DependentUpon>Appoinment.cs</DependentUpon>
+    <Compile Include="Appointment.Designer.cs">
+      <DependentUpon>Appointment.cs</DependentUpon>
     </Compile>
     <Compile Include="DChannels.cs">
       <SubType>Form</SubType>
@@ -106,11 +106,11 @@
     <Compile Include="PaymentDetails.Designer.cs">
       <DependentUpon>PaymentDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="PharmacyLogin.cs">
+    <Compile Include="Pharmacy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PharmacyLogin.Designer.cs">
-      <DependentUpon>PharmacyLogin.cs</DependentUpon>
+    <Compile Include="Pharmacy.Designer.cs">
+      <DependentUpon>Pharmacy.cs</DependentUpon>
     </Compile>
     <Compile Include="POrder.cs">
       <SubType>Form</SubType>
@@ -130,11 +130,11 @@
     <Compile Include="PProfileSettings.Designer.cs">
       <DependentUpon>PProfileSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="RiderLogin.cs">
+    <Compile Include="Rider.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RiderLogin.Designer.cs">
-      <DependentUpon>RiderLogin.cs</DependentUpon>
+    <Compile Include="Rider.Designer.cs">
+      <DependentUpon>Rider.cs</DependentUpon>
     </Compile>
     <Compile Include="Signup.cs">
       <SubType>Form</SubType>
@@ -148,11 +148,11 @@
     <Compile Include="Patient.Designer.cs">
       <DependentUpon>Patient.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pharmacy.cs">
+    <Compile Include="PharmacyCheckout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pharmacy.Designer.cs">
-      <DependentUpon>Pharmacy.cs</DependentUpon>
+    <Compile Include="PharmacyCheckout.Designer.cs">
+      <DependentUpon>PharmacyCheckout.cs</DependentUpon>
     </Compile>
     <Compile Include="DPLogin.cs">
       <SubType>Form</SubType>
@@ -171,8 +171,8 @@
     <EmbeddedResource Include="ALLINCARE.resx">
       <DependentUpon>ALLINCARE.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Appoinment.resx">
-      <DependentUpon>Appoinment.cs</DependentUpon>
+    <EmbeddedResource Include="Appointment.resx">
+      <DependentUpon>Appointment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Channel.resx">
       <DependentUpon>Channel.cs</DependentUpon>
@@ -204,11 +204,11 @@
     <EmbeddedResource Include="PaymentDetails.resx">
       <DependentUpon>PaymentDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PharmacyCheckout.resx">
+      <DependentUpon>PharmacyCheckout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pharmacy.resx">
       <DependentUpon>Pharmacy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PharmacyLogin.resx">
-      <DependentUpon>PharmacyLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PHealthinfo.resx">
       <DependentUpon>PHealthinfo.cs</DependentUpon>
@@ -232,8 +232,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RiderLogin.resx">
-      <DependentUpon>RiderLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Rider.resx">
+      <DependentUpon>Rider.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>

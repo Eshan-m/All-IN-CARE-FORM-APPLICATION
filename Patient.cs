@@ -56,7 +56,7 @@ namespace WindowsFormsApp1
         private void button6_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Appoinment log = new Appoinment();
+            Appointment log = new Appointment();
             log.Show();
         }
 
