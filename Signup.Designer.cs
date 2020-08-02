@@ -66,7 +66,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Select the login";            
+            this.label1.Text = "Select the login";
             // 
             // label2
             // 
@@ -76,7 +76,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "First Name";            
+            this.label2.Text = "First Name";
             // 
             // label3
             // 
@@ -106,7 +106,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(153, 20);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Confirm Password";            
+            this.label5.Text = "Confirm Password";
             // 
             // label6
             // 
@@ -164,7 +164,7 @@
             this.textBox4.Location = new System.Drawing.Point(548, 155);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(256, 20);
-            this.textBox4.TabIndex = 11;           
+            this.textBox4.TabIndex = 11;
             // 
             // textBox5
             // 
@@ -229,6 +229,7 @@
             this.SelectLogin.Name = "SelectLogin";
             this.SelectLogin.Size = new System.Drawing.Size(218, 21);
             this.SelectLogin.TabIndex = 19;
+            this.SelectLogin.SelectedIndexChanged += new System.EventHandler(this.SelectLogin_SelectedIndexChanged);
             // 
             // comboBox2
             // 
