@@ -35,16 +35,21 @@ namespace WindowsFormsApp1
                         {
                             con.Open();
                             cmd.ExecuteNonQuery();
-                            MessageBox.Show("Your Records Updated Successfully");
+                            MessageBox.Show("Thank you for choosing ALL-IN-CARE");
+                            this.Hide();
+                            LOGIN log = new LOGIN();
+                            log.Show();
                         }
                         else
                         {
-                            MessageBox.Show("The password you entered is not matching with the previous one");
+                            MessageBox.Show("The password you entered is not matching with the previous one try again");
+                            Signup log = new Signup();
+                            log.Show();
                         }
                     }
                     catch (SqlException ex)
                     {
-                        MessageBox.Show("TRY AGAIN ERROR OCCURED!!");
+                        MessageBox.Show("Form Submission Failed");
                         Console.Write(ex.ToString());
                     }
                     finally
@@ -63,17 +68,23 @@ namespace WindowsFormsApp1
                         {
                             con2.Open();
                             cmd2.ExecuteNonQuery();
-                            MessageBox.Show("Your Records Updated Successfully");
+                            MessageBox.Show("Thank you for choosing ALL-IN-CARE");
+                            this.Hide();
+                            LOGIN log = new LOGIN();
+                            log.Show();
                         }
                         else
                         {
-                            MessageBox.Show("The password you entered is not matching with the previous one");
+                            MessageBox.Show("The password you entered is not matching with the previous one try again");
+                            Signup log = new Signup();
+                            log.Show();
+
                         }
                         
                     }
                     catch (SqlException ex)
                     {
-                        MessageBox.Show("TRY AGAIN ERROR OCCURED!!");
+                        MessageBox.Show("Form Submission Failed");
                         Console.Write(ex.ToString());
                     }
                     finally

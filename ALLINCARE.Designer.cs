@@ -55,7 +55,6 @@
     "\nsuffer from health issues and hasn\'t the financial states to get the best healt" +
     "hcare.";
             this.label2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // splitContainer1
             // 
@@ -69,8 +68,7 @@
             this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.button3);
             this.splitContainer1.Panel1.Controls.Add(this.button4);
-            this.splitContainer1.Panel1.Controls.Add(this.button5);
-            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
+            this.splitContainer1.Panel1.Controls.Add(this.button5);           
             // 
             // splitContainer1.Panel2
             // 
@@ -187,7 +185,6 @@
             this.Name = "Form1";
             this.Text = "ALL-IN-CARE";
             this.TransparencyKey = System.Drawing.Color.Transparent;
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);

@@ -17,11 +17,6 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }      
-
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -36,11 +31,6 @@ namespace WindowsFormsApp1
             log.Show();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -53,16 +43,6 @@ namespace WindowsFormsApp1
             this.Hide();
             Channel ch = new Channel();
             ch.Show();
-        }
-
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }       
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-          
-        }
+        }      
     }
 }
