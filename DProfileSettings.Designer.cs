@@ -303,7 +303,6 @@
             this.label1.Size = new System.Drawing.Size(82, 17);
             this.label1.TabIndex = 35;
             this.label1.Text = "Full Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 

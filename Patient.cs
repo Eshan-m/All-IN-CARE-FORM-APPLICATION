@@ -70,7 +70,9 @@ namespace WindowsFormsApp1
 
         private void button7_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
+            Form1 f1 = new Form1();
+            f1.Show();
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -78,14 +80,10 @@ namespace WindowsFormsApp1
             this.Hide();
         }
 
-        private void splitter1_SplitterMoved(object sender, SplitterEventArgs e)
-        {
-
-        }
 
         private void Patient_Load(object sender, EventArgs e)
         {
-
+            unameTxt.Text = Texttransfer.Uname;
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -104,6 +102,31 @@ namespace WindowsFormsApp1
             DataSet set = new DataSet();
             adapter.Fill(set, "Patient");
             dataGridView1.DataSource = set.Tables["Patient"];
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Desktop\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
+            string query = "delete from PatientSettings where Username= '" + unameTxt.Text + "' ";
+            SqlCommand cmd = new SqlCommand(query, con);
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Deletion was successfull");
+                this.Close();
+                Form1 f1 = new Form1();
+                f1.Show();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Oops there's a problem deleting your account please try again later");
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }

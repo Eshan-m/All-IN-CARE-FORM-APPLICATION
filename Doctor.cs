@@ -42,7 +42,9 @@ namespace WindowsFormsApp1
 
         private void button5_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
+            Form1 f1 = new Form1();
+            f1.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -54,8 +56,8 @@ namespace WindowsFormsApp1
 
         private void button6_Click(object sender, EventArgs e)
         {
-            String conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\EDUCATION\1 Year SEM 3\Object Oriented Programming with C#\Assigments\SEM END Project\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30";
-            String query = "SELECT * FROM CurrentChannels";
+            string conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\EDUCATION\1 Year SEM 3\Object Oriented Programming with C#\Assigments\SEM END Project\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30";
+            string query = "SELECT * FROM CurrentChannels";
 
             SqlDataAdapter adapter = new SqlDataAdapter(query, conString);
             DataSet set = new DataSet();
@@ -63,9 +65,34 @@ namespace WindowsFormsApp1
             dataGridView1.DataSource = set.Tables["CurrentChannels"];
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void Doctor_Load(object sender, EventArgs e)
         {
+            unameTxt.Text = Texttransfer.Uname;
+        }
 
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Desktop\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
+            string query="delete from DoctorSettings where Username= '"+unameTxt.Text+"' ";
+            SqlCommand cmd = new SqlCommand(query, con);
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Deletion was successfull");
+                this.Close();
+                Form1 f1 = new Form1();
+                f1.Show();
+            }
+            catch(SqlException ex)
+            {
+                MessageBox.Show("Oops there's a problem deleting your account please try again later");
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }
