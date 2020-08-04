@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
@@ -49,6 +50,22 @@ namespace WindowsFormsApp1
             this.Hide();
             LOGIN log = new LOGIN();
             log.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            String conString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\isuru\OneDrive\Desktop\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30";
+            String query = "SELECT * FROM CurrentChannels";
+
+            SqlDataAdapter adapter = new SqlDataAdapter(query, conString);
+            DataSet set = new DataSet();
+            adapter.Fill(set, "CurrentChannels");
+            dataGridView1.DataSource = set.Tables["CurrentChannels"];
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
