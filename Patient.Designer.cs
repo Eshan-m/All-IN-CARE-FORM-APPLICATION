@@ -31,12 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Patient));
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -58,14 +52,16 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.btnPRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // splitter1
             // 
             this.splitter1.Location = new System.Drawing.Point(0, 0);
+            this.splitter1.Margin = new System.Windows.Forms.Padding(4);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(209, 450);
+            this.splitter1.Size = new System.Drawing.Size(279, 554);
             this.splitter1.TabIndex = 1;
             this.splitter1.TabStop = false;
             this.splitter1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitter1_SplitterMoved);
@@ -74,140 +70,102 @@
             // 
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6});
-            this.dataGridView1.Location = new System.Drawing.Point(215, 24);
+            this.dataGridView1.Location = new System.Drawing.Point(316, 30);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(650, 231);
+            this.dataGridView1.Size = new System.Drawing.Size(802, 284);
             this.dataGridView1.TabIndex = 10;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Transaction Id";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Hospital Name";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Name";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Doctor Details";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Date";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 125;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Prescription";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(235, 267);
+            this.label2.Location = new System.Drawing.Point(313, 329);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(49, 17);
             this.label2.TabIndex = 11;
             this.label2.Text = "Name:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(235, 299);
+            this.label3.Location = new System.Drawing.Point(313, 368);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 13);
+            this.label3.Size = new System.Drawing.Size(37, 17);
             this.label3.TabIndex = 12;
             this.label3.Text = "Age:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(235, 357);
+            this.label4.Location = new System.Drawing.Point(313, 439);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 13);
+            this.label4.Size = new System.Drawing.Size(53, 17);
             this.label4.TabIndex = 13;
             this.label4.Text = "Height:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(235, 328);
+            this.label5.Location = new System.Drawing.Point(313, 404);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.Size = new System.Drawing.Size(56, 17);
             this.label5.TabIndex = 14;
             this.label5.Text = "Weight:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(235, 388);
+            this.label6.Location = new System.Drawing.Point(313, 478);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(112, 13);
+            this.label6.Size = new System.Drawing.Size(149, 17);
             this.label6.TabIndex = 15;
             this.label6.Text = "Diagonostic Problems:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(279, 267);
+            this.textBox1.Location = new System.Drawing.Point(372, 329);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(452, 20);
+            this.textBox1.Size = new System.Drawing.Size(601, 22);
             this.textBox1.TabIndex = 16;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(279, 296);
+            this.textBox2.Location = new System.Drawing.Point(372, 364);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(62, 20);
+            this.textBox2.Size = new System.Drawing.Size(81, 22);
             this.textBox2.TabIndex = 17;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(279, 328);
+            this.textBox3.Location = new System.Drawing.Point(372, 404);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(62, 20);
+            this.textBox3.Size = new System.Drawing.Size(81, 22);
             this.textBox3.TabIndex = 18;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(279, 357);
+            this.textBox4.Location = new System.Drawing.Point(372, 439);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(62, 20);
+            this.textBox4.Size = new System.Drawing.Size(81, 22);
             this.textBox4.TabIndex = 19;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(353, 366);
+            this.textBox5.Location = new System.Drawing.Point(471, 450);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(384, 72);
+            this.textBox5.Size = new System.Drawing.Size(511, 88);
             this.textBox5.TabIndex = 20;
             // 
             // button8
@@ -216,9 +174,10 @@
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(795, 410);
+            this.button8.Location = new System.Drawing.Point(1060, 505);
+            this.button8.Margin = new System.Windows.Forms.Padding(4);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(64, 28);
+            this.button8.Size = new System.Drawing.Size(85, 34);
             this.button8.TabIndex = 22;
             this.button8.Text = "Edit";
             this.button8.UseVisualStyleBackColor = false;
@@ -226,10 +185,11 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(12, 24);
+            this.textBox6.Location = new System.Drawing.Point(16, 30);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(177, 41);
+            this.textBox6.Size = new System.Drawing.Size(235, 50);
             this.textBox6.TabIndex = 23;
             // 
             // button1
@@ -238,9 +198,10 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(26, 85);
+            this.button1.Location = new System.Drawing.Point(35, 105);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 24);
+            this.button1.Size = new System.Drawing.Size(188, 30);
             this.button1.TabIndex = 24;
             this.button1.Text = "Profile Settings";
             this.button1.UseVisualStyleBackColor = false;
@@ -252,9 +213,10 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(26, 115);
+            this.button2.Location = new System.Drawing.Point(35, 142);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 22);
+            this.button2.Size = new System.Drawing.Size(188, 27);
             this.button2.TabIndex = 25;
             this.button2.Text = "Health Info";
             this.button2.UseVisualStyleBackColor = false;
@@ -266,9 +228,10 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(26, 143);
+            this.button3.Location = new System.Drawing.Point(35, 176);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(141, 27);
+            this.button3.Size = new System.Drawing.Size(188, 33);
             this.button3.TabIndex = 26;
             this.button3.Text = "Order";
             this.button3.UseVisualStyleBackColor = false;
@@ -280,9 +243,10 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(26, 176);
+            this.button4.Location = new System.Drawing.Point(35, 217);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(141, 21);
+            this.button4.Size = new System.Drawing.Size(188, 26);
             this.button4.TabIndex = 27;
             this.button4.Text = "Channel Now";
             this.button4.UseVisualStyleBackColor = false;
@@ -294,9 +258,10 @@
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(26, 203);
+            this.button5.Location = new System.Drawing.Point(35, 250);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(141, 21);
+            this.button5.Size = new System.Drawing.Size(188, 26);
             this.button5.TabIndex = 28;
             this.button5.Text = "Doctor Details";
             this.button5.UseVisualStyleBackColor = false;
@@ -308,9 +273,10 @@
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(26, 230);
+            this.button6.Location = new System.Drawing.Point(35, 283);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(141, 23);
+            this.button6.Size = new System.Drawing.Size(188, 28);
             this.button6.TabIndex = 29;
             this.button6.Text = "Appoinment";
             this.button6.UseVisualStyleBackColor = false;
@@ -322,9 +288,10 @@
             this.button9.FlatAppearance.BorderSize = 0;
             this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(26, 259);
+            this.button9.Location = new System.Drawing.Point(35, 319);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(141, 23);
+            this.button9.Size = new System.Drawing.Size(188, 28);
             this.button9.TabIndex = 30;
             this.button9.Text = "Payment Details";
             this.button9.UseVisualStyleBackColor = false;
@@ -336,9 +303,10 @@
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(48, 410);
+            this.button7.Location = new System.Drawing.Point(64, 505);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(141, 28);
+            this.button7.Size = new System.Drawing.Size(188, 34);
             this.button7.TabIndex = 31;
             this.button7.Text = "Log Out";
             this.button7.UseVisualStyleBackColor = false;
@@ -349,21 +317,35 @@
             this.button10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(12, 410);
+            this.button10.Location = new System.Drawing.Point(16, 505);
+            this.button10.Margin = new System.Windows.Forms.Padding(4);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(26, 28);
+            this.button10.Size = new System.Drawing.Size(35, 34);
             this.button10.TabIndex = 32;
             this.button10.Text = "<";
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
+            // btnPRefresh
+            // 
+            this.btnPRefresh.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.d555qn4_5a4a59be_1f8e_4786_80a9_1ab7f41f7a50;
+            this.btnPRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPRefresh.Location = new System.Drawing.Point(1091, 329);
+            this.btnPRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPRefresh.Name = "btnPRefresh";
+            this.btnPRefresh.Size = new System.Drawing.Size(44, 39);
+            this.btnPRefresh.TabIndex = 33;
+            this.btnPRefresh.UseVisualStyleBackColor = true;
+            this.btnPRefresh.Click += new System.EventHandler(this.btnPRefresh_Click);
+            // 
             // Patient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(871, 450);
+            this.ClientSize = new System.Drawing.Size(1161, 554);
+            this.Controls.Add(this.btnPRefresh);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button9);
@@ -389,6 +371,7 @@
             this.Controls.Add(this.splitter1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Patient";
             this.Text = "Patient";
@@ -403,12 +386,6 @@
 
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -430,5 +407,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnPRefresh;
     }
 }
