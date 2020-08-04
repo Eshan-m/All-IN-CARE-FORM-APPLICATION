@@ -21,7 +21,7 @@ namespace WindowsFormsApp1
         private void PharmacyLogin_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\EDUCATION\1 Year SEM 3\Object Oriented Programming with C#\Assigments\SEM END Project\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sd = new SqlDataAdapter("SELECT count(*) FROM Pharmacy WHERE Username='" + textBox1.Text + "' AND Password='" + textBox2.Text + "'", con);
+            SqlDataAdapter sd = new SqlDataAdapter("SELECT count(*) FROM (Tablename) WHERE Username='" + textBox1.Text + "' AND Password='" + textBox2.Text + "'", con);
             DataTable dt = new DataTable();
             sd.Fill(dt);
             if (dt.Rows[0][0].ToString() == "1")
@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
         private void RiderLogin_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\EDUCATION\1 Year SEM 3\Object Oriented Programming with C#\Assigments\SEM END Project\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
-            SqlDataAdapter sd = new SqlDataAdapter("SELECT count(*) FROM Rider WHERE Username='" + textBox1.Text + "' AND Password='" + textBox2.Text + "'", con);
+            SqlDataAdapter sd = new SqlDataAdapter("SELECT count(*) FROM (Tablename) WHERE Username='" + textBox1.Text + "' AND Password='" + textBox2.Text + "'", con);
             DataTable dt = new DataTable();
             sd.Fill(dt);
             if (dt.Rows[0][0].ToString() == "1")
