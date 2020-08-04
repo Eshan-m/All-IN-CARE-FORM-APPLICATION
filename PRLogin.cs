@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
@@ -17,34 +18,43 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void PharmacyLogin_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\EDUCATION\1 Year SEM 3\Object Oriented Programming with C#\Assigments\SEM END Project\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlDataAdapter sd = new SqlDataAdapter("SELECT count(*) FROM Pharmacy WHERE Username='" + textBox1.Text + "' AND Password='" + textBox2.Text + "'", con);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            if (dt.Rows[0][0].ToString() == "1")
+            {
+                this.Hide();
+                new Pharmacy().Show();
+            }
+            else
+                MessageBox.Show("Invalid username or password");
+        }
+
+        private void RiderLogin_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\EDUCATION\1 Year SEM 3\Object Oriented Programming with C#\Assigments\SEM END Project\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlDataAdapter sd = new SqlDataAdapter("SELECT count(*) FROM Rider WHERE Username='" + textBox1.Text + "' AND Password='" + textBox2.Text + "'", con);
+            DataTable dt = new DataTable();
+            sd.Fill(dt);
+            if (dt.Rows[0][0].ToString() == "1")
+            {
+                this.Hide();
+                new Rider().Show();
+            }
+            else
+                MessageBox.Show("Invalid username or password");
+        }
+
+        private void SignUp_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Signup log = new Signup();
-            log.Show();
-          
+            new Signup().Show();
         }
 
-        private void PRLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Pharmacy pl = new Pharmacy();
-            pl.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Rider rl = new Rider();
-            rl.Show();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
+        private void BackButton_Click(object sender, EventArgs e)
         {
             this.Hide();
             LOGIN log = new LOGIN();

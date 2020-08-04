@@ -34,10 +34,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.PharmacyLogin = new System.Windows.Forms.Button();
+            this.RiderLogin = new System.Windows.Forms.Button();
+            this.SignUp = new System.Windows.Forms.Button();
+            this.BackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -92,64 +92,64 @@
             this.textBox2.Size = new System.Drawing.Size(221, 20);
             this.textBox2.TabIndex = 11;
             // 
-            // button1
+            // PharmacyLogin
             // 
-            this.button1.BackColor = System.Drawing.Color.Silver;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(135, 286);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 40);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Pharmacy\r\nLogin";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.PharmacyLogin.BackColor = System.Drawing.Color.Silver;
+            this.PharmacyLogin.FlatAppearance.BorderSize = 0;
+            this.PharmacyLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.PharmacyLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PharmacyLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PharmacyLogin.Location = new System.Drawing.Point(135, 286);
+            this.PharmacyLogin.Name = "PharmacyLogin";
+            this.PharmacyLogin.Size = new System.Drawing.Size(92, 40);
+            this.PharmacyLogin.TabIndex = 12;
+            this.PharmacyLogin.Text = "Pharmacy\r\nLogin";
+            this.PharmacyLogin.UseVisualStyleBackColor = false;
+            this.PharmacyLogin.Click += new System.EventHandler(this.PharmacyLogin_Click);
             // 
-            // button2
+            // RiderLogin
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(354, 286);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 40);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Rider\r\nLogin";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.RiderLogin.BackColor = System.Drawing.Color.Silver;
+            this.RiderLogin.FlatAppearance.BorderSize = 0;
+            this.RiderLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.RiderLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RiderLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RiderLogin.Location = new System.Drawing.Point(354, 286);
+            this.RiderLogin.Name = "RiderLogin";
+            this.RiderLogin.Size = new System.Drawing.Size(92, 40);
+            this.RiderLogin.TabIndex = 13;
+            this.RiderLogin.Text = "Rider\r\nLogin";
+            this.RiderLogin.UseVisualStyleBackColor = false;
+            this.RiderLogin.Click += new System.EventHandler(this.RiderLogin_Click);
             // 
-            // button3
+            // SignUp
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button3.FlatAppearance.BorderSize = 2;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(221, 413);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(149, 30);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Sign Up";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.SignUp.BackColor = System.Drawing.Color.Transparent;
+            this.SignUp.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.SignUp.FlatAppearance.BorderSize = 2;
+            this.SignUp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.SignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignUp.Location = new System.Drawing.Point(221, 413);
+            this.SignUp.Name = "SignUp";
+            this.SignUp.Size = new System.Drawing.Size(149, 30);
+            this.SignUp.TabIndex = 14;
+            this.SignUp.Text = "Sign Up";
+            this.SignUp.UseVisualStyleBackColor = false;
+            this.SignUp.Click += new System.EventHandler(this.SignUp_Click);
             // 
-            // button5
+            // BackButton
             // 
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(12, 409);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(26, 34);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "<";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.BackButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BackButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackButton.Location = new System.Drawing.Point(12, 409);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(26, 34);
+            this.BackButton.TabIndex = 15;
+            this.BackButton.Text = "<";
+            this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // PRLogin
             // 
@@ -158,10 +158,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(673, 488);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BackButton);
+            this.Controls.Add(this.SignUp);
+            this.Controls.Add(this.RiderLogin);
+            this.Controls.Add(this.PharmacyLogin);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
@@ -173,7 +173,6 @@
             this.MaximizeBox = false;
             this.Name = "PRLogin";
             this.Text = "PRLogin";
-            this.Load += new System.EventHandler(this.PRLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,9 +185,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button PharmacyLogin;
+        private System.Windows.Forms.Button RiderLogin;
+        private System.Windows.Forms.Button SignUp;
+        private System.Windows.Forms.Button BackButton;
     }
 }
