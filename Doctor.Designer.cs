@@ -32,7 +32,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -40,6 +39,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.btnCChannels = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button6 = new System.Windows.Forms.Button();
+            this.unameTxt = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,15 +76,6 @@
             this.button1.Text = "Profile Settings";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(16, 27);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(225, 51);
-            this.textBox2.TabIndex = 5;
             // 
             // button2
             // 
@@ -177,7 +169,27 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(739, 287);
             this.dataGridView1.TabIndex = 10;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(33, 361);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(179, 34);
+            this.button6.TabIndex = 17;
+            this.button6.Text = "Delete my account";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            // 
+            // unameTxt
+            // 
+            this.unameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.unameTxt.Location = new System.Drawing.Point(17, 31);
+            this.unameTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.unameTxt.Name = "unameTxt";
+            this.unameTxt.ReadOnly = true;
+            this.unameTxt.Size = new System.Drawing.Size(235, 34);
+            this.unameTxt.TabIndex = 23;
+            this.unameTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Doctor
             // 
@@ -186,6 +198,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1065, 554);
+            this.Controls.Add(this.unameTxt);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.btnCChannels);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label1);
@@ -193,7 +207,6 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.textBox1);
@@ -203,6 +216,7 @@
             this.MaximizeBox = false;
             this.Name = "Doctor";
             this.Text = "Doctor";
+            this.Load += new System.EventHandler(this.Doctor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -214,7 +228,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;
@@ -222,5 +235,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnCChannels;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox unameTxt;
     }
 }

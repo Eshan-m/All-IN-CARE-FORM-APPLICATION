@@ -42,7 +42,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.unameTxt = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -53,6 +53,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.btnPRefresh = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +65,6 @@
             this.splitter1.Size = new System.Drawing.Size(279, 554);
             this.splitter1.TabIndex = 1;
             this.splitter1.TabStop = false;
-            this.splitter1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitter1_SplitterMoved);
             // 
             // dataGridView1
             // 
@@ -183,14 +183,16 @@
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // textBox6
+            // unameTxt
             // 
-            this.textBox6.Location = new System.Drawing.Point(16, 30);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(235, 50);
-            this.textBox6.TabIndex = 23;
+            this.unameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.unameTxt.Location = new System.Drawing.Point(16, 30);
+            this.unameTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.unameTxt.Name = "unameTxt";
+            this.unameTxt.ReadOnly = true;
+            this.unameTxt.Size = new System.Drawing.Size(235, 34);
+            this.unameTxt.TabIndex = 23;
+            this.unameTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button1
             // 
@@ -338,6 +340,16 @@
             this.btnPRefresh.UseVisualStyleBackColor = true;
             this.btnPRefresh.Click += new System.EventHandler(this.btnPRefresh_Click);
             // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(35, 392);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(188, 29);
+            this.button11.TabIndex = 34;
+            this.button11.Text = "Delete my account";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
             // Patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -345,6 +357,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1161, 554);
+            this.Controls.Add(this.button11);
             this.Controls.Add(this.btnPRefresh);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button7);
@@ -355,7 +368,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.unameTxt);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -397,7 +410,7 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox unameTxt;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -408,5 +421,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button btnPRefresh;
+        private System.Windows.Forms.Button button11;
     }
 }

@@ -55,7 +55,6 @@
             this.label1.Size = new System.Drawing.Size(146, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Specialize:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -68,7 +67,6 @@
             this.label2.Size = new System.Drawing.Size(186, 31);
             this.label2.TabIndex = 1;
             this.label2.Text = "Select Doctor:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label4
             // 
@@ -81,7 +79,6 @@
             this.label4.Size = new System.Drawing.Size(204, 31);
             this.label4.TabIndex = 3;
             this.label4.Text = "Select Hospital:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -94,7 +91,6 @@
             this.label5.Size = new System.Drawing.Size(237, 31);
             this.label5.TabIndex = 4;
             this.label5.Text = "Select Date & Time:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // dtpAppointment
             // 
@@ -149,7 +145,6 @@
             this.cmbDoctor.Name = "cmbDoctor";
             this.cmbDoctor.Size = new System.Drawing.Size(277, 24);
             this.cmbDoctor.TabIndex = 11;
-            this.cmbDoctor.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // cmbHospital
             // 
@@ -241,7 +236,6 @@
             this.MaximizeBox = false;
             this.Name = "Channel";
             this.Text = "Channel Now";
-            this.Load += new System.EventHandler(this.Channel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

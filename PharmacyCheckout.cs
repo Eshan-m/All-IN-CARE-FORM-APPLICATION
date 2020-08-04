@@ -44,12 +44,6 @@ namespace WindowsFormsApp1
             }
         }                
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-           
-           
-        }        
-
         private void cashBtn_CheckedChanged(object sender, EventArgs e)
         {
             Payment = "Cash On Delivery";

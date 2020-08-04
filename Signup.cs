@@ -26,7 +26,7 @@ namespace WindowsFormsApp1
             switch (option)
             {
                 case "Patient ":
-                    SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\EDUCATION\1 Year SEM 3\Object Oriented Programming with C#\Assigments\SEM END Project\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
+                    SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Desktop\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
                     string query = "insert into PatientSettings(Username,FirstName,LastName,BirthDate,AdressLine1,AdressLine2,ZipCode,Province,Email,MobileNo1,Password,ConfirmPassword) values('" + unameTxt.Text + "','" + fnameTxt.Text + "','" + lnameTxt.Text + "','" + bdayCal.Value + "','" + ad1Txt.Text + "','" + ad2Txt.Text + "','" + zipTxt.Text + "','" + provCmb.Text + "','" + emailTxt.Text + "','" + mobileTxt.Text + "','" + pwTxt.Text + "','" + conpwTxt + "')";
                     SqlCommand cmd = new SqlCommand(query, con);
                     try
@@ -50,7 +50,7 @@ namespace WindowsFormsApp1
                     catch (SqlException ex)
                     {
                         MessageBox.Show("Form Submission Failed");
-                        Console.Write(ex.ToString());      
+                        MessageBox.Show(ex.ToString());      
                     }
                     finally
                     {
@@ -59,7 +59,7 @@ namespace WindowsFormsApp1
                     break;
 
                 case "Doctor":
-                    SqlConnection con2= new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\EDUCATION\1 Year SEM 3\Object Oriented Programming with C#\Assigments\SEM END Project\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
+                    SqlConnection con2= new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Desktop\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
                     string query2 = "insert into DoctorSettings(Username,FirstName,LastName,BirthDate,AddressLine1,AddressLine2,ZipCode,Province,Email,MobileNo1,Password,ConfirmPassword) values('" + unameTxt.Text + "','" + fnameTxt.Text + "','" + lnameTxt.Text + "','" + bdayCal.Value + "','" + ad1Txt.Text + "','" + ad2Txt.Text + "','" + zipTxt.Text + "','" + provCmb.Text + "','" + emailTxt.Text + "','" + mobileTxt.Text + "','" + pwTxt.Text + "','" + conpwTxt + "')";
                     SqlCommand cmd2 = new SqlCommand(query2,con2);
                     try

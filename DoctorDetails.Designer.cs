@@ -49,7 +49,6 @@
             this.label3.Size = new System.Drawing.Size(142, 22);
             this.label3.TabIndex = 11;
             this.label3.Text = "Select Doctor";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // comboBox1
             // 
