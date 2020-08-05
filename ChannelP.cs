@@ -35,6 +35,9 @@ namespace WindowsFormsApp1
                 con.Open();
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Your Appointment Is Confirmed");
+                this.Hide();
+                Patient cn = new Patient();
+                cn.Show();
             }
 
             catch(SqlException ex1)
