@@ -156,6 +156,7 @@
             this.unameTxt.Location = new System.Drawing.Point(45, 14);
             this.unameTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.unameTxt.Name = "unameTxt";
+            this.unameTxt.ReadOnly = true;
             this.unameTxt.Size = new System.Drawing.Size(185, 34);
             this.unameTxt.TabIndex = 10;
             this.unameTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -223,6 +224,7 @@
             this.MaximizeBox = false;
             this.Name = "Pharmacy";
             this.Text = "Pharmacy";
+            this.Load += new System.EventHandler(this.Pharmacy_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -55,10 +55,12 @@
             // 
             // unameTxt
             // 
+            this.unameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.unameTxt.Location = new System.Drawing.Point(45, 36);
             this.unameTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.unameTxt.Name = "unameTxt";
-            this.unameTxt.Size = new System.Drawing.Size(185, 22);
+            this.unameTxt.ReadOnly = true;
+            this.unameTxt.Size = new System.Drawing.Size(185, 34);
             this.unameTxt.TabIndex = 1;
             this.unameTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

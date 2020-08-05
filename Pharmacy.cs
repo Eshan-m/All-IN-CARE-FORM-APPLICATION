@@ -39,8 +39,8 @@ namespace WindowsFormsApp1
 
         private void button7_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Desktop\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = "delete from PatientSettings where Username= '" + unameTxt.Text + "' ";
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\isuru\OneDrive\Desktop\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
+            string query = "delete from PharmacySettings where Username= '" + unameTxt.Text + "' ";
             SqlCommand cmd = new SqlCommand(query, con);
             try
             {
@@ -68,10 +68,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void button8_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void btnSRefresh_Click(object sender, EventArgs e)
         {
@@ -83,6 +80,11 @@ namespace WindowsFormsApp1
 
             adaptor.Fill(set, "PharmacyStocks");
             dataGridView1.DataSource = set.Tables["PharmacyStocks"];
+        }
+
+        private void Pharmacy_Load(object sender, EventArgs e)
+        {
+            unameTxt.Text = Texttransfer.Uname;
         }
     }
 }
