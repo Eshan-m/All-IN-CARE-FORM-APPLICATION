@@ -25,7 +25,7 @@ namespace WindowsFormsApp1
             string prob = probTxt.Text;
             string tele = teleTxt.Text;
             string email = emailTxt.Text;
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\isuru\OneDrive\Desktop\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\EDUCATION\1 Year SEM 3\Object Oriented Programming with C#\Assigments\SEM END Project\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
             string query = "insert into Contact(Name,Problem,Tele,Email) values('" + name + "','" + prob + "','" + tele + "','" + email + "')";
             SqlCommand cmd = new SqlCommand(query, con);
             try
