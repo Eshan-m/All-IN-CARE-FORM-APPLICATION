@@ -111,12 +111,18 @@ namespace WindowsFormsApp1
             SqlCommand cmd = new SqlCommand(query, con);
             try
             {
-                con.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Deletion was successfull");
-                this.Close();
-                Form1 f1 = new Form1();
-                f1.Show();
+                if (MessageBox.Show("Do you really want to delete your account??", "Message", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Deletion was successfull");
+                    this.Close();
+                    Form1 f1 = new Form1();
+                    f1.Show();
+                }
+                else
+                    this.Show();
+
             }
             catch (SqlException ex)
             {
