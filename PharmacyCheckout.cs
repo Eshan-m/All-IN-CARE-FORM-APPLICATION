@@ -22,26 +22,11 @@ namespace WindowsFormsApp1
         string Payment;
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\EDUCATION\1 Year SEM 3\Object Oriented Programming with C#\Assigments\SEM END Project\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = "insert into Pharmacy(City,Pharmacy,Date,Payment) values('" + cityCmb.Text + "','" + pharmacyLst.Text + "','" + dateCal.Value.ToString() + "','" + Payment + "')";
-            SqlCommand cmd = new SqlCommand(query, con);
+            MessageBox.Show("Please Log In before Odering!!");
             this.Hide();
-            try
-            {
-                con.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Records were added successfully");
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show(ex.ToString());
-                MessageBox.Show("Error your values didn't added");
-            }
-            finally
-            {
-                con.Close();
-            }
+            LOGIN cn = new LOGIN();
+            cn.Show();
+
         }                
 
         private void cashBtn_CheckedChanged(object sender, EventArgs e)
@@ -52,20 +37,13 @@ namespace WindowsFormsApp1
         private void payBtn_CheckedChanged(object sender, EventArgs e)
         {
             Payment = "Pay Now";
-        }
+        }        
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form1 log = new Form1();
             log.Show();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Patient patient = new Patient();
-            patient.Show();
         }
     }
 }

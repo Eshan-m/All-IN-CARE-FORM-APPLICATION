@@ -52,6 +52,12 @@
     <Compile Include="ALLINCARE.Designer.cs">
       <DependentUpon>ALLINCARE.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChannelP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChannelP.Designer.cs">
+      <DependentUpon>ChannelP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Contact.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,12 @@
     <Compile Include="Pharmacy.Designer.cs">
       <DependentUpon>Pharmacy.cs</DependentUpon>
     </Compile>
+    <Compile Include="PharmacyCheckoutP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PharmacyCheckoutP.Designer.cs">
+      <DependentUpon>PharmacyCheckoutP.cs</DependentUpon>
+    </Compile>
     <Compile Include="POrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +147,18 @@
     </Compile>
     <Compile Include="Rider.Designer.cs">
       <DependentUpon>Rider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignupPharmacy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignupPharmacy.Designer.cs">
+      <DependentUpon>SignupPharmacy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignupRider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignupRider.Designer.cs">
+      <DependentUpon>SignupRider.cs</DependentUpon>
     </Compile>
     <Compile Include="Signup.cs">
       <SubType>Form</SubType>
@@ -175,6 +199,9 @@
     <EmbeddedResource Include="Appointment.resx">
       <DependentUpon>Appointment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChannelP.resx">
+      <DependentUpon>ChannelP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Channel.resx">
       <DependentUpon>Channel.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PaymentDetails.resx">
       <DependentUpon>PaymentDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PharmacyCheckoutP.resx">
+      <DependentUpon>PharmacyCheckoutP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PharmacyCheckout.resx">
       <DependentUpon>PharmacyCheckout.cs</DependentUpon>
@@ -235,6 +265,12 @@
     </Compile>
     <EmbeddedResource Include="Rider.resx">
       <DependentUpon>Rider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignupPharmacy.resx">
+      <DependentUpon>SignupPharmacy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignupRider.resx">
+      <DependentUpon>SignupRider.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
