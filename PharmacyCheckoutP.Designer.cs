@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class PharmacyCheckout
+    partial class PharmacyCheckoutP
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PharmacyCheckout));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PharmacyCheckoutP));
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.label1 = new System.Windows.Forms.Label();
             this.dateCal = new System.Windows.Forms.DateTimePicker();
@@ -129,7 +129,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(627, 417);
+            this.button1.Location = new System.Drawing.Point(627, 408);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(161, 25);
             this.button1.TabIndex = 7;
@@ -224,7 +224,7 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // PharmacyCheckout
+            // PharmacyCheckoutP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -249,7 +249,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "PharmacyCheckout";
+            this.Name = "PharmacyCheckoutP";
             this.Text = "Pharmacy";
             this.ResumeLayout(false);
             this.PerformLayout();

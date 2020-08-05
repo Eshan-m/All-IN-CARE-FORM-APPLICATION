@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
-    public partial class Signup : Form
+    public partial class SignupRider : Form
     {
-        public Signup()
+        public SignupRider()
         {
             InitializeComponent();
         }       
@@ -91,7 +91,13 @@ namespace WindowsFormsApp1
                     {
                         con2.Close();
                     }
-                    break;                
+                    break;
+                case "Pharmarcy":
+                    MessageBox.Show("Thank you for connecting with us");
+                    break;
+                case "Rider":
+                    MessageBox.Show("Thank you for connecting with us");
+                    break;
                 default:
                     MessageBox.Show("error");
                     break;
@@ -114,15 +120,9 @@ namespace WindowsFormsApp1
                     break;
                 case "Pharmarcy":
                     MessageBox.Show("You have selected Pharmacy do you wanna proceed");
-                    this.Hide();
-                    SignupPharmacy log1 = new SignupPharmacy();
-                    log1.Show();
                     break;
                 case "Rider":
                     MessageBox.Show("You have selected Rider do you wanna proceed");
-                    this.Hide();
-                    SignupRider log2 = new SignupRider();
-                    log2.Show();
                     break;
                 default:
                     MessageBox.Show("error");

@@ -11,46 +11,52 @@ using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
-    public partial class POrder : Form
+    public partial class ChannelP : Form
     {
-        public POrder()
+        public ChannelP()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string special = cmbSpecialize.SelectedItem.ToString();
+            string descript = txtProbDescript.Text;
+            string doc = cmbDoctor.SelectedItem.ToString();
+            string hos = cmbHospital.SelectedItem.ToString();
+            string appointdate = dtpAppointment.Value.ToString();
+
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\EDUCATION\1 Year SEM 3\Object Oriented Programming with C#\Assigments\SEM END Project\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
-            string query = "insert into [Order](FullName,Address,Prescription) values('" + fnameTxt.Text + "','" + adTxt.Text + "','" + prescmb.Text + "')";
+            string query = "insert into ChannelOne(Specialize,ProblemDescription,Doctor,Hospital,DateandTime) values('" + special + "', '" + descript + "', '" + doc + "', '" + hos + "', '" + appointdate + "')";
             SqlCommand cmd = new SqlCommand(query, con);
+
             try
-            { 
+            {
                 con.Open();
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Successfully Recorded");
-                this.Hide();
-                PharmacyCheckoutP log = new PharmacyCheckoutP();
-                log.Show();
+                MessageBox.Show("Your Appointment Is Confirmed");
+            }
 
-            }
-            catch(SqlException ex)
+            catch(SqlException ex1)
             {
-                MessageBox.Show(ex.ToString());
-                MessageBox.Show("Failed to record");
+                MessageBox.Show("Your Appointment Is Not Confirmed");
+                MessageBox.Show(ex1.ToString());
             }
+
             finally
             {
                 con.Close();
             }
-            
-        }
 
-        private void button5_Click(object sender, EventArgs e)
+
+
+        }       
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            Patient log = new Patient();
-            log.Show();
-
+            Patient patient = new Patient();
+            patient.Show();
         }
     }
 }

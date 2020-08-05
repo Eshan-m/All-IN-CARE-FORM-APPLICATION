@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Channel log = new Channel();
+            ChannelP log = new ChannelP();
             log.Show();
         }
 
