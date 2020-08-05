@@ -55,9 +55,18 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();            
+            this.Hide();
+            Form1 log = new Form1();
+            log.Show();
             
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Patient patient = new Patient();
+            patient.Show();
         }
     }
 }
