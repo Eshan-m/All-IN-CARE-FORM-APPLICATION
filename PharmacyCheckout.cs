@@ -53,6 +53,19 @@ namespace WindowsFormsApp1
         {
             Payment = "Pay Now";
         }
-       
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 log = new Form1();
+            log.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Patient patient = new Patient();
+            patient.Show();
+        }
     }
 }
