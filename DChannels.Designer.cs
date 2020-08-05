@@ -39,22 +39,24 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 21);
+            this.label1.Location = new System.Drawing.Point(16, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 27);
+            this.label1.Size = new System.Drawing.Size(261, 34);
             this.label1.TabIndex = 36;
             this.label1.Text = "Today Channels";
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightBlue;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 66);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 81);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(450, 164);
+            this.dataGridView1.Size = new System.Drawing.Size(600, 202);
             this.dataGridView1.TabIndex = 37;
             // 
             // button1
@@ -63,9 +65,10 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(392, 294);
+            this.button1.Location = new System.Drawing.Point(523, 362);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(58, 32);
+            this.button1.Size = new System.Drawing.Size(77, 39);
             this.button1.TabIndex = 38;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = false;
@@ -77,9 +80,10 @@
             this.btnSChannels.FlatAppearance.BorderSize = 0;
             this.btnSChannels.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.btnSChannels.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSChannels.Location = new System.Drawing.Point(190, 236);
+            this.btnSChannels.Location = new System.Drawing.Point(253, 290);
+            this.btnSChannels.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSChannels.Name = "btnSChannels";
-            this.btnSChannels.Size = new System.Drawing.Size(108, 32);
+            this.btnSChannels.Size = new System.Drawing.Size(144, 39);
             this.btnSChannels.TabIndex = 39;
             this.btnSChannels.Text = "Show All Channels";
             this.btnSChannels.UseVisualStyleBackColor = false;
@@ -87,17 +91,18 @@
             // 
             // DChannels
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(474, 336);
+            this.ClientSize = new System.Drawing.Size(632, 414);
             this.Controls.Add(this.btnSChannels);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "DChannels";
             this.Text = "Channels";
