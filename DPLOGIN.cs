@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
 
         private void PatientLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\isuru\OneDrive\Desktop\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Desktop\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter sd = new SqlDataAdapter("SELECT count(*) FROM PatientSettings WHERE Username='" + unameTxt.Text + "' AND Password='" + pwTxt.Text + "'", con);
             DataTable dt = new DataTable();
             sd.Fill(dt);
