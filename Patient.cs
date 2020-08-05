@@ -102,9 +102,9 @@ namespace WindowsFormsApp1
             DataSet set = new DataSet();
             adapter.Fill(set, "Patient");
             dataGridView1.DataSource = set.Tables["Patient"];
-        }
+        }       
 
-        private void button11_Click(object sender, EventArgs e)
+        private void button12_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Desktop\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
             string query = "delete from PatientSettings where Username= '" + unameTxt.Text + "' ";
