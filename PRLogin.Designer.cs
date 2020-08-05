@@ -78,16 +78,15 @@
             // unameTxt
             // 
             this.unameTxt.Location = new System.Drawing.Point(277, 153);
-            this.unameTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.unameTxt.Margin = new System.Windows.Forms.Padding(4);
             this.unameTxt.Name = "unameTxt";
-            this.unameTxt.PasswordChar = '*';
             this.unameTxt.Size = new System.Drawing.Size(293, 22);
             this.unameTxt.TabIndex = 10;
             // 
             // pwTxt
             // 
             this.pwTxt.Location = new System.Drawing.Point(277, 226);
-            this.pwTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pwTxt.Margin = new System.Windows.Forms.Padding(4);
             this.pwTxt.Name = "pwTxt";
             this.pwTxt.PasswordChar = '*';
             this.pwTxt.Size = new System.Drawing.Size(293, 22);
@@ -101,7 +100,7 @@
             this.PharmacyLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PharmacyLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PharmacyLogin.Location = new System.Drawing.Point(180, 352);
-            this.PharmacyLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PharmacyLogin.Margin = new System.Windows.Forms.Padding(4);
             this.PharmacyLogin.Name = "PharmacyLogin";
             this.PharmacyLogin.Size = new System.Drawing.Size(123, 49);
             this.PharmacyLogin.TabIndex = 12;
@@ -117,7 +116,7 @@
             this.RiderLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RiderLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RiderLogin.Location = new System.Drawing.Point(472, 352);
-            this.RiderLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RiderLogin.Margin = new System.Windows.Forms.Padding(4);
             this.RiderLogin.Name = "RiderLogin";
             this.RiderLogin.Size = new System.Drawing.Size(123, 49);
             this.RiderLogin.TabIndex = 13;
@@ -134,7 +133,7 @@
             this.SignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignUp.Location = new System.Drawing.Point(295, 508);
-            this.SignUp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SignUp.Margin = new System.Windows.Forms.Padding(4);
             this.SignUp.Name = "SignUp";
             this.SignUp.Size = new System.Drawing.Size(199, 37);
             this.SignUp.TabIndex = 14;
@@ -148,7 +147,7 @@
             this.BackButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BackButton.Location = new System.Drawing.Point(16, 503);
-            this.BackButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BackButton.Margin = new System.Windows.Forms.Padding(4);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(35, 42);
             this.BackButton.TabIndex = 15;

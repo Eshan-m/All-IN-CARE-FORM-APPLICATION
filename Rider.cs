@@ -61,5 +61,17 @@ namespace WindowsFormsApp1
             Form1 f1 = new Form1();
             f1.Show();
         }
+
+        private void btnRRefresh_Click(object sender, EventArgs e)
+        {
+            string ConString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\isuru\OneDrive\Desktop\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30";
+            string query = "SELECT*FROM RiderDeliveries";
+
+            SqlDataAdapter adaptor = new SqlDataAdapter(query, ConString);
+            DataSet set = new DataSet();
+
+            adaptor.Fill(set, "RiderDeliveries");
+            dataGridView1.DataSource = set.Tables["RiderDeliveries"];
+        }
     }
 }
