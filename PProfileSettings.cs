@@ -21,7 +21,7 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\EDUCATION\1 Year SEM 3\Object Oriented Programming with C#\Assigments\SEM END Project\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
-            String query = "update PatientSettings where UserName='" + Username.Text + "'set FirstName='" + FName.Text + "'set LastName='" + LName.Text + "' set BirthDate='" + BDdate.Value.ToString() + "'set AdressLine1='" + AdLine1.Text + "'set AdressLine2='" + ADLine2.Text + "'set ZipCode='" + ZipCode.Text + "'set Province='" + Province.Text + "'set Email='" + Mail.Text + "' set MobileNo1='" + MbNo1.Text + "' set MobileNo2='" + MbNo2.Text + "' set EmergencyNo1='" + ECNo1.Text + "' set EmergencyNo2='" + ECNo2.Text + "'";
+            String query = "update PatientSettings Set FirstName='" + this.FName.Text + "',LastName='" + this.LName.Text + "',BirthDate='" + this.BDdate.Value.ToString() + "',AdressLine1='" + this.AdLine1.Text + "',AdressLine2='" + this.ADLine2.Text + "',ZipCode='" + this.ZipCode.Text + "',Province='" + this.Province.Text + "',Email='" + this.Mail.Text + "',MobileNo1='" + this.MbNo1.Text + "',MobileNo2='" + this.MbNo2.Text + "',EmergencyNo1='" + this.ECNo1.Text + "',EmergencyNo2='" + this.ECNo2.Text + "'where UserName='" + this.Username.Text + "';";
             SqlCommand cmd = new SqlCommand(query, con);
             this.Hide();
             Patient log = new Patient();
