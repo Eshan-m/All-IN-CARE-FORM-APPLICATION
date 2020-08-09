@@ -28,9 +28,21 @@ namespace WindowsFormsApp1
         private void Rider_Load(object sender, EventArgs e)
         {
             unameTxt.Text = Texttransfer.Uname;
+        }        
+
+        private void btnRRefresh_Click(object sender, EventArgs e)
+        {
+            string ConString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\EDUCATION\1 Year SEM 3\Object Oriented Programming with C#\Assigments\SEM END Project\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30";
+            string query = "SELECT*FROM RiderDeliveries";
+
+            SqlDataAdapter adaptor = new SqlDataAdapter(query, ConString);
+            DataSet set = new DataSet();
+
+            adaptor.Fill(set, "RiderDeliveries");
+            dataGridView1.DataSource = set.Tables["RiderDeliveries"];
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\EDUCATION\1 Year SEM 3\Object Oriented Programming with C#\Assigments\SEM END Project\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30");
             string query = "delete FROM RiderSettings where Username= '" + unameTxt.Text + "' ";
@@ -59,25 +71,7 @@ namespace WindowsFormsApp1
             {
                 con.Close();
             }
-        }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Form1 f1 = new Form1();
-            f1.Show();
-        }
-
-        private void btnRRefresh_Click(object sender, EventArgs e)
-        {
-            string ConString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\EDUCATION\1 Year SEM 3\Object Oriented Programming with C#\Assigments\SEM END Project\All-IN-CARE-FORM-APPLICATION\AllInCare.mdf;Integrated Security=True;Connect Timeout=30";
-            string query = "SELECT*FROM RiderDeliveries";
-
-            SqlDataAdapter adaptor = new SqlDataAdapter(query, ConString);
-            DataSet set = new DataSet();
-
-            adaptor.Fill(set, "RiderDeliveries");
-            dataGridView1.DataSource = set.Tables["RiderDeliveries"];
         }
     }
 }
